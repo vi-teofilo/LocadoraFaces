@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{clienteBacking.cadastraCliente}:#cadastrarCliente.jsp"
+    NAME="output" PATH="/cadastrarCliente.jsp"
+    TARGET="rules:#cadastrarCliente.jsp"
+    TITLE="#{clienteBacking.cadastraCliente}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarCliente.jsp"
+  PATH="/cadastrarCliente.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarCliente.jsp:0" NAME="item"
+   PATH="/cadastrarCliente.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="448,17,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#consultarCliente.jsp"
+  PATH="/consultarCliente.jsp" SHAPE="240,145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarCliente.jsp:0" NAME="item"
+   PATH="/consultarCliente.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::1" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::1" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{filmeBacking.cadastraFilme}:#cadastrarFilme.jsp"
+    NAME="output" PATH="/cadastrarFilme.jsp"
+    TARGET="rules:#cadastrarFilme.jsp"
+    TITLE="#{filmeBacking.cadastraFilme}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::2" SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::2" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{vendedorBacking.cadastraVendedor}:#cadastrarVendedor.jsp"
+    NAME="output" PATH="/cadastrarVendedor.jsp"
+    TARGET="rules:#cadastrarVendedor.jsp"
+    TITLE="#{vendedorBacking.cadastraVendedor}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarCliente.jsp"
+  PATH="/alterarCliente.jsp" SHAPE="240,257,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarCliente.jsp:0" NAME="item"
+   PATH="/alterarCliente.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::3" SHAPE="32,353,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::3" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{clienteBacking.consultaCliente}:#consultarCliente.jsp"
+    NAME="output" PATH="/consultarCliente.jsp"
+    TARGET="rules:#consultarCliente.jsp"
+    TITLE="#{clienteBacking.consultaCliente}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarFilme.jsp"
+  PATH="/cadastrarFilme.jsp" SHAPE="240,481,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarFilme.jsp:0" NAME="item"
+   PATH="/cadastrarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::4" SHAPE="32,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::4" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{filmeBacking.consultaFilme}:#consultarFilme.jsp"
+    NAME="output" PATH="/consultarFilme.jsp"
+    TARGET="rules:#consultarFilme.jsp"
+    TITLE="#{filmeBacking.consultaFilme}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::5" SHAPE="32,577,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::5" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{vendedorBacking.consultaVendedor}:#consultarVendedor.jsp"
+    NAME="output" PATH="/consultarVendedor.jsp"
+    TARGET="rules:#consultarVendedor.jsp"
+    TITLE="#{vendedorBacking.consultaVendedor}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarFilme.jsp" PATH="/alterarFilme.jsp"
+  SHAPE="240,593,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarFilme.jsp:0" NAME="item"
+   PATH="/alterarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarFilme.jsp"
+  PATH="/consultarFilme.jsp" SHAPE="256,369,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarFilme.jsp:0" NAME="item"
+   PATH="/consultarFilme.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::6" SHAPE="32,689,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::6" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{clienteBacking.alterarCliente}:#alterarCliente.jsp"
+    NAME="output" PATH="/alterarCliente.jsp"
+    TARGET="rules:#alterarCliente.jsp"
+    TITLE="#{clienteBacking.alterarCliente}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarVendedor.jsp"
+  PATH="/cadastrarVendedor.jsp" SHAPE="240,817,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastrarVendedor.jsp:0" NAME="item"
+   PATH="/cadastrarVendedor.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::7" SHAPE="32,801,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::7" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{filmeBacking.alterarFilme}:#alterarFilme.jsp" NAME="output"
+    PATH="/alterarFilme.jsp" TARGET="rules:#alterarFilme.jsp"
+    TITLE="#{filmeBacking.alterarFilme}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarVendedor.jsp"
+  PATH="/consultarVendedor.jsp" SHAPE="240,929,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consultarVendedor.jsp:0" NAME="item"
+   PATH="/consultarVendedor.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules::8" SHAPE="32,1025,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::8" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{vendedorBacking.alterarVendedor}:#alterarVendedor.jsp"
+    NAME="output" PATH="/alterarVendedor.jsp"
+    TARGET="rules:#alterarVendedor.jsp"
+    TITLE="#{vendedorBacking.alterarVendedor}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#alterarVendedor.jsp"
+  PATH="/alterarVendedor.jsp" SHAPE="240,1041,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#alterarVendedor.jsp:0" NAME="item"
+   PATH="/alterarVendedor.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#index.jsp" NAME="output"
+    PATH="/index.jsp" TARGET="rules:#index.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
